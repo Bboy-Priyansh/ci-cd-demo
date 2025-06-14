@@ -3,4 +3,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello and welcom to FlaSH's CI/CD!"
+    return "Hello and welcome to FlaSH's CI/CD!"
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
